@@ -9,7 +9,7 @@ pipeline {
         }
         stage('BUILD'){
             steps {
-                sh 'npm run build'
+                sh 'docker build --tag test:lts .'
             }
         }
     }
